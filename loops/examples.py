@@ -15,3 +15,8 @@ for number in my_list:
 
   print("never reaches here")
 
+#
+# NOTE: enumerate creates tuples with the value and the key being the index
+#
+for index, number in enumerate(my_list):
+  print(f"now I have the index {index} and the number {number}")
