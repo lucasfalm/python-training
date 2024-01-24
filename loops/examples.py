@@ -20,3 +20,12 @@ for number in my_list:
 #
 for index, number in enumerate(my_list):
   print(f"now I have the index {index} and the number {number}")
+
+#
+# NOTE: concatenate two or more lists
+#
+
+another_list = ["a", "b", "c", "d", "e"]
+
+for number, letter in zip(my_list, another_list):
+  print(f"number {number}, letter {letter}")

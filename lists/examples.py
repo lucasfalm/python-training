@@ -39,3 +39,8 @@ some_list.reverse()
 # NOTE: counting
 #
 print(some_list.count(0))
+
+#
+# NOTE: check if value is in the list
+#
+print("a" in some_list)
