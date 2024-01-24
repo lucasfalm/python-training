@@ -22,6 +22,9 @@ dictionary.update({ "fourth_key": "oh yeah" })
 
 dictionary["fifth_key"] = "it also works"
 
+#
+# NOTE: doing a, b is known as tuple packing
+#
 for key, item in dictionary.items():
   print(f"I'm '{item}' from key '{key}'")
 
