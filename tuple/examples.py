@@ -1,4 +1,8 @@
 #
+# NOTE: tuple is an immutable list
+#
+
+#
 # NOTE: creating a tuple
 #
 a_tuple = ("x", { "y": 100 , "z": [1, 2, 3] })

@@ -1,4 +1,8 @@
 #
+# NOTE: a set is a list with unique items
+#
+
+#
 # NOTE: creating a set
 #
 some_set = set()
@@ -11,7 +15,7 @@ some_set.add("2")
 some_set.add("2")
 
 #
-# NOTE: cast list to set (make uniq items)
+# NOTE: cast list to set (make unique items)
 #
 my_list = ["1", "2", "2"]
 set(my_list)
