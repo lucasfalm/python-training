@@ -45,8 +45,6 @@ with open(file_path) as opened_my_file:
 #
 # NOTE: writing to the file
 #
-with open(file_path, "w") as opened_my_file:
+with open(file_path, "w+") as opened_my_file:
   opened_my_file.write("that's a new line\n")
-
-with open(file_path, "r") as opened_my_file:
   print(opened_my_file.read())
