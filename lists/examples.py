@@ -44,3 +44,12 @@ print(some_list.count(0))
 # NOTE: check if value is in the list
 #
 print("a" in some_list)
+
+some_string = "my string"
+
+#
+# NOTE: list comprehension (flat for loop - one line loop)
+#
+[string.upper() for string in some_string] # => ['M', 'Y', ' ', 'S', 'T', 'R', 'I', 'N', 'G']
+
+[string.upper() for string in some_string if string == "m"] # => ['M']
