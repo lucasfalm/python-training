@@ -23,3 +23,9 @@ print(some_string)
 print(other_string)
 print(another_string)
 print(precision_float_string)
+
+#
+# NOTE: reversing a string
+#
+my_name = "Lucas"
+my_name[::-1] # => sacuL
