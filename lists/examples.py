@@ -1,3 +1,5 @@
+from random import shuffle
+
 #
 # NOTE: using len()
 #
@@ -53,3 +55,8 @@ some_string = "my string"
 [string.upper() for string in some_string] # => ['M', 'Y', ' ', 'S', 'T', 'R', 'I', 'N', 'G']
 
 [string.upper() for string in some_string if string == "m"] # => ['M']
+
+#
+# NOTE: shuffle a list
+#
+shuffle(some_list)
