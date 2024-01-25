@@ -1,27 +1,29 @@
 from datetime import datetime
 
+def print_choice(type, items):
+  print(f"you choose the {type}: {', '.join(items)}")
+
 def make_order(price, time, *args, **kwargs):
   if "fruits" in kwargs:
-    print(f"you choose the fruits: {', '.join(kwargs['fruits'])}")
+    print_choice("fruits", kwargs["fruits"])
 
   if "foods" in kwargs:
-    print(f"you choose the foods: {', '.join(kwargs['foods'])}")
+    print_choice("foods", kwargs["foods"])
 
   if "drinks" in kwargs:
-    print(f"you choose the drinks: {', '.join(kwargs['drinks'])}")
+    print_choice("drinks", kwargs["drinks"])
+
+  response = f"order made at {time}\ntotal: {price}"
 
   if len(args) == 2:
     address, comments = args
 
-  response = f"order made at {time}\ntotal: {price}"
-
-  if address:
     response += f"\nto deliver at: {address}"
-
-  if comments:
     response += f"\nextra comments: {comments}"
 
   print(response)
+
+# ------------ X ------------ X ------------ #
 
 today = datetime.now()
 
