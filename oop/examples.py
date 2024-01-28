@@ -7,6 +7,18 @@ class ParentClass():
   def say_hi(self):
     print("hi from the ParentClass")
 
+  #
+  # NOTE: an abstract method:
+  #
+  #       a method never meant to be used from the parent object
+  #       but reimplemented by the children classes
+  #
+  def say_bye(self):
+    raise "this method has to be overwritten"
+
+  def __say_good_morning(self):
+    raise "this method has to be overwritten"
+
 # ------------ X ------------ X ------------ #
 
 class MyClass(ParentClass):
@@ -36,13 +48,21 @@ class MyClass(ParentClass):
     #
     super().say_hi()
 
+    self.__say_good_morning()
+
     print(f"hi, {self.name}! (from the MyClass)")
+
+  def say_bye(self):
+    print("bye!")
 
   #
   # NOTE: private methods are available only to the object
   #
   def __some_private_method(self):
     print("I'm a private method, don't call me directly")
+
+  def __say_good_morning(self):
+    print("good morning!")
 
   #
   # NOTE: protected methods are available to the family (parent/s)
@@ -89,3 +109,5 @@ my_object._MyClass__some_private_method()
 # NOTE: protected method names are not mangled as the privates are
 #
 my_object._some_protected_method()
+
+my_object.say_bye()
