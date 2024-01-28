@@ -1,7 +1,11 @@
 from datetime import datetime
 
+# ------------ X ------------ X ------------ #
+
 def print_choice(type, items):
   print(f"you choose the {type}: {', '.join(items)}")
+
+# ------------ X ------------ X ------------ #
 
 def make_order(price, time, *args, **kwargs):
   if "fruits" in kwargs:

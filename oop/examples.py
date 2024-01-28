@@ -1,9 +1,13 @@
+# ------------ X ------------ X ------------ #
+
 class ParentClass():
   def __init__(self):
     print("creating the parent object")
 
   def say_hi(self):
     print("hi from the ParentClass")
+
+# ------------ X ------------ X ------------ #
 
 class MyClass(ParentClass):
   #
@@ -56,7 +60,7 @@ class MyClass(ParentClass):
     print(f"my class attribute is '{MyClass.class_common_attribute}'")
     print(f"my class attribute can be called like this too '{self.class_common_attribute}'")
 
-# X ------------------ X ------------------ X
+# ------------ X ------------ X ------------ #
 
 my_object = MyClass(name = "lucas") # this is the '.new'
 
