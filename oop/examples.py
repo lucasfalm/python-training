@@ -35,7 +35,7 @@ class MyClass(ParentClass):
     print(f"hi, {self.name}! (from the MyClass)")
 
   #
-  # NOTE: private methods are available only for the object
+  # NOTE: private methods are available only to the object
   #
   def __some_private_method(self):
     print("I'm a private method, don't call me directly")
