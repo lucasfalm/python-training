@@ -8,8 +8,8 @@
 def my_generator():
   for number in range(5):
     #
-    # NOTE: every time next(my_generator()) is called, the previous
-    #       yielded value is executed (as if it was going through each element in the list)
+    # NOTE: every time next(my_generator()) is called, the next
+    #       yielded value takes place (as if it was going through each element in the list)
     #
     yield number
 
