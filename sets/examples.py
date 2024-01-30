@@ -24,6 +24,8 @@ some_set.union(other_set) # => join
 #
 some_set.difference(other_set)
 
+x_set = other_set.copy() # => copy and create new (clone)
+
 #
 # NOTE: returns a new set containing elements that are in the
 #       first set but not in the second set
