@@ -27,5 +27,11 @@ print(precision_float_string)
 #
 # NOTE: reversing a string
 #
-my_name = "Lucas"
-my_name[::-1] # => sacuL
+my_name = "Lucas Feijo"
+my_name[::-1] # => ojieF sacuL
+
+my_name.capitalize()
+my_name.uppercase()
+my_name.lower()
+my_name.split(" ")  # NOTE: excluding the separator
+my_name.partition(" ") # NOTE: including the separator

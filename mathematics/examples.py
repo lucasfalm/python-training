@@ -5,6 +5,8 @@ print(math.floor(some_float)) # => 8 (rounded integer)
 print(math.ceil(some_float))  # => 9 (next integer above)
 print(math.log10(some_float)) # => 0.9143431571194408
 
+round(some_float, 1) # NOTE: how many decimal digits
+
 #
 # NOTE: numpy library has deeper math functions than the standard library
 #
