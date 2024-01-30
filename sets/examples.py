@@ -14,6 +14,14 @@ some_set.add("1")
 some_set.add("2")
 some_set.add("2")
 
+other_set = set(["1", "3"])
+
+some_set.difference(other_set)
+
+some_set.union(other_set)
+
+some_set.symmetric_difference(other_set)
+
 #
 # NOTE: cast list to set (make unique items)
 #
