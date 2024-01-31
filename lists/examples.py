@@ -60,3 +60,9 @@ some_string = "my string"
 # NOTE: shuffle a list
 #
 shuffle(some_list)
+
+#
+# NOTE: extend a list (append a list in a list)
+#
+some_list.extend([100, 500])
+some_list # => [2, 8, 0, 3, 5, 1, 4, 100, 500]
